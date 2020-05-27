@@ -16,9 +16,7 @@ public struct BlurEffectModifier: ViewModifier {
 
 fileprivate struct _BlurVisualEffectViewRepresentable: UIViewRepresentable {
 	func makeUIView(context: Context) -> UIVisualEffectView {
-		UIVisualEffectView(
-			effect: UIBlurEffect(style: context.environment.blurEffectStyle)
-		)
+		UIVisualEffectView(effect: UIBlurEffect(style: context.environment.blurEffectStyle))
 	}
 	
 	func updateUIView(_ uiView: UIVisualEffectView, context: Context) {}
