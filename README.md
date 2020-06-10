@@ -1,3 +1,3 @@
 # SwiftUI Visual Effects
 
-A description of this package.
+View modifiers that wrap UIVisualEffectView, with environment integration.
