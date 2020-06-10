@@ -6,7 +6,7 @@
 import SwiftUI
 
 public extension View {
-	/// The intensity of a blur effect.
+	/// Sets the style for blur effects within this view.
 	func blurEffectStyle(_ style: UIBlurEffect.Style) -> some View {
 		environment(\.blurEffectStyle, style)
 	}
