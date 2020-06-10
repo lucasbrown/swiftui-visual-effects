@@ -7,7 +7,7 @@ import SwiftUI
 
 public extension View {
 	/// The style that defines what level of vibrancy to apply to content.
-	func vibrancyEffectStyle(_ value: UIVibrancyEffectStyle) -> some View {
-		environment(\.vibrancyEffectStyle, value)
+	func vibrancyEffectStyle(_ style: UIVibrancyEffectStyle) -> some View {
+		environment(\.vibrancyEffectStyle, style)
 	}
 }
