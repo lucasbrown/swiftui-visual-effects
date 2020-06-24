@@ -31,8 +31,6 @@ public struct SwiftUIVisualEffects_Demonstration: View {
 	}
 }
 
-// MARK: - private extension SwiftUIVisualEffects_Demonstration
-
 private extension SwiftUIVisualEffects_Demonstration {
 	var linearGradient: LinearGradient {
 		LinearGradient(gradient: Gradient(colors: [.blue, .red]), startPoint: .topLeading, endPoint: .bottomTrailing)
