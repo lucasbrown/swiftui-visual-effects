@@ -9,7 +9,7 @@ public extension View {
 	/**
 	Sets the style for blur effects within this view.
 	
-	To set a specific style for all blur effects and vibrancy effects containing blur effects within a view, use the blurEffectStyle(_:) modifier:
+	To set a specific style for all blur effects and vibrancy effects containing blur effects within a view, use the `blurEffectStyle(_:)` modifier:
 	```
 	ZStack {
 		backgroundContent
