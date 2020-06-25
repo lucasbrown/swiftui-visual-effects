@@ -1,7 +1,7 @@
 # SwiftUI Visual Effects
 
 <p align="center">
-  <img height="450px" src="https://user-images.githubusercontent.com/49323986/85778521-42f14f00-b6e8-11ea-9046-3b1bb45cd813.png">
+  <img src="https://user-images.githubusercontent.com/49323986/85778521-42f14f00-b6e8-11ea-9046-3b1bb45cd813.png">
   <br>
   System materials in SwiftUI
 </p>
