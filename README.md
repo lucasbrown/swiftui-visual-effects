@@ -1,5 +1,11 @@
 # SwiftUI Visual Effects
 
+<p align="center">
+  <img height="450px" src="https://user-images.githubusercontent.com/49323986/85778521-42f14f00-b6e8-11ea-9046-3b1bb45cd813.png">
+  <br>
+  System materials in SwiftUI
+</p>
+
 View modifiers that wrap `UIVisualEffectView` and all of its associated objects, with environment integration for storing effect styles. Vibrancy effects will always use the current blur effect style for proper vibrancy-effect layering.
 
 ### Adding and Styling a Blur Effect
