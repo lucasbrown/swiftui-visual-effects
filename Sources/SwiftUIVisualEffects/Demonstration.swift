@@ -13,7 +13,7 @@ public struct SwiftUIVisualEffects_Demonstration: View {
 			linearGradient
 				.blurEffect()
 			
-			VStack(spacing: 8) {
+			VStack {
 				image
 					.vibrancyEffect()
 				
@@ -33,7 +33,7 @@ public struct SwiftUIVisualEffects_Demonstration: View {
 
 private extension SwiftUIVisualEffects_Demonstration {
 	var linearGradient: LinearGradient {
-		LinearGradient(gradient: Gradient(colors: [.blue, .red]), startPoint: .topLeading, endPoint: .bottomTrailing)
+		LinearGradient(gradient: Gradient(colors: [.blue, .red]), startPoint: .top, endPoint: .bottom)
 	}
 	
 	var image: some View {
@@ -44,12 +44,12 @@ private extension SwiftUIVisualEffects_Demonstration {
 	}
 	
 	var largeTitleText: Text {
-		Text("Hello, world.")
+		Text("Hello, World")
 			.font(.largeTitle)
 	}
 	
 	var titleText: Text {
-		Text("The world says, \"Hey.\"")
+		Text("Greetings from SwiftUI")
 			.font(.title)
 	}
 }
