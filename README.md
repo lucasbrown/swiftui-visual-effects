@@ -1,8 +1,8 @@
 # SwiftUI Visual Effects
 
 <p align="center">
-  <img width="400" src="https://user-images.githubusercontent.com/49323986/85805691-a2fceb00-b712-11ea-859d-bd0c3d93c878.png">
-  <img width="400" src="https://user-images.githubusercontent.com/49323986/85805707-adb78000-b712-11ea-94e6-f88716401a2c.png">
+  <img width="300" src="https://user-images.githubusercontent.com/49323986/85805691-a2fceb00-b712-11ea-859d-bd0c3d93c878.png">
+  <img width="300" src="https://user-images.githubusercontent.com/49323986/85805707-adb78000-b712-11ea-94e6-f88716401a2c.png">
   <br>
   System materials in SwiftUI
 </p>
