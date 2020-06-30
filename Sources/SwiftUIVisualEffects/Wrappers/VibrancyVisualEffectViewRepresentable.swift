@@ -15,11 +15,13 @@ struct _VibrancyVisualEffectViewRepresentable<Content: View>: UIViewRepresentabl
 	}
 	
 	func makeUIView(context: Context) -> UIVisualEffectView {
-		context.coordinator.configuredVisualEffectView(from: context)
+		context.coordinator.configureVisualEffectView(from: context)
+		
+		return context.coordinator.visualEffectView
 	}
 	
 	func updateUIView(_ uiView: UIVisualEffectView, context: Context) {
-		context.coordinator.configuredVisualEffectView(from: context)
+		context.coordinator.configureVisualEffectView(from: context)
 	}
 	
 	private let content: Content
@@ -27,6 +29,8 @@ struct _VibrancyVisualEffectViewRepresentable<Content: View>: UIViewRepresentabl
 
 extension _VibrancyVisualEffectViewRepresentable {
 	final class Coordinator {
+		let visualEffectView = UIVisualEffectView()
+		
 		init(content: Content) {
 			let hostingController = UIHostingController(rootView: content)
 			hostingController.view.autoresizingMask = [.flexibleWidth, .flexibleHeight]
@@ -35,7 +39,7 @@ extension _VibrancyVisualEffectViewRepresentable {
 			visualEffectView.contentView.addSubview(hostingController.view)
 		}
 		
-		@discardableResult func configuredVisualEffectView(from context: Context) -> UIVisualEffectView {
+		func configureVisualEffectView(from context: Context) {
 			let blurEffect = UIBlurEffect(style: context.environment.blurEffectStyle)
 			
 			// Set `visualEffectView`'s `effect`.
@@ -44,10 +48,6 @@ extension _VibrancyVisualEffectViewRepresentable {
 			} else {
 				visualEffectView.effect = UIVibrancyEffect(blurEffect: blurEffect)
 			}
-			
-			return visualEffectView
 		}
-		
-		private let visualEffectView = UIVisualEffectView()
 	}
 }
