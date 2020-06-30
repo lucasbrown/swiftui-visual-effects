@@ -10,6 +10,7 @@ public struct BlurEffectModifier: ViewModifier {
 	public init() {}
 	
 	public func body(content: Content) -> some View {
-		content.overlay(_BlurVisualEffectViewRepresentable())
+		content
+			.overlay(_BlurVisualEffectViewRepresentable())
 	}
 }

@@ -13,7 +13,6 @@ public struct VibrancyEffectModifier: ViewModifier {
 		content
 			// Hide the original content, keeping its intrinsic content size.
 			.hidden()
-			// Overlay the modified content.
 			.overlay(_VibrancyVisualEffectViewRepresentable(content: content))
 	}
 }
