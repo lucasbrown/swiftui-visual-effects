@@ -10,5 +10,7 @@ struct _BlurVisualEffectViewRepresentable: UIViewRepresentable {
 		UIVisualEffectView(effect: UIBlurEffect(style: context.environment.blurEffectStyle))
 	}
 	
-	func updateUIView(_ uiView: UIVisualEffectView, context: Context) {}
+	func updateUIView(_ uiView: UIVisualEffectView, context: Context) {
+		uiView.effect = UIBlurEffect(style: context.environment.blurEffectStyle)
+	}
 }
