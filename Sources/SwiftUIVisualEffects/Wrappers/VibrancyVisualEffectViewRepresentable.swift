@@ -6,6 +6,7 @@
 import SwiftUI
 
 struct _VibrancyVisualEffectViewRepresentable<Content: View>: UIViewRepresentable {
+	/// - Warning: `content`'s intrinsic content size will be lost.
 	init(content: Content) {
 		self.content = content
 	}
